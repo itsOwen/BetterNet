@@ -33,7 +33,7 @@ if __name__ == "__main__":
     create_directory("model")
 
     # Paths to both datasets
-    dataset_paths = ["Dataset/CVC-ColonDB", "Dataset/Kvasir-Sessile"]
+    dataset_paths = ["Dataset/Kvasir-SEG", "Dataset/CVC-ClinicDB"]
 
     loaded_dataset = load_dataset(dataset_paths)
     print(f"Training images: {len(loaded_dataset[0][0])}")

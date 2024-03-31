@@ -221,7 +221,7 @@ Please adhere to the code style and guidelines used in the project.
 
 ## License 📄
 
-BetterNet is released under the [MIT License](https://opensource.org/licenses/MIT). You are free to use, modify, and distribute the code for both commercial and non-commercial purposes.
+BetterNet is released under the GNU General Public License v3.0 (GPLv3). You are free to use, modify, and distribute the code under the terms of this license. However, if you want to use the code in proprietary software or for commercial purposes, you must obtain explicit permission from the copyright holder.
 
 ## Acknowledgments 🙏
 

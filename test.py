@@ -39,14 +39,16 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='Test model on a dataset.')
     parser.add_argument('--dataset', type=str, required=True, help='Name of the dataset directory in the "Dataset" folder.')
+    parser.add_argument('--fulltest', action='store_true', help='Test on the full dataset instead of loading from val.txt')
     args = parser.parse_args()
 
     dataset_name = args.dataset
+    fulltest = args.fulltest
     print(f"Testing on {dataset_name}")
 
     dataset_path = os.path.join("Dataset", dataset_name)
     
-    test_images, test_masks = load_test_dataset(dataset_path)
+    test_images, test_masks = load_test_dataset(dataset_path, fulltest)
 
     image_size = (224, 224)
 

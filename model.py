@@ -3,9 +3,9 @@ from tensorflow.keras.layers import (Conv2D, Activation, BatchNormalization, UpS
                                      Input, Concatenate, Add, Dropout, GlobalAveragePooling2D,
                                      Reshape, Dense, multiply, Resizing)
 from tensorflow.keras.models import Model
-from tensorflow.keras.applications import EfficientNetB1
+from tensorflow.keras.applications import EfficientNetB3
 from tensorflow.keras.layers import GlobalMaxPooling2D, Conv2D
-from tensorflow.keras.regularizers import l1_l2 # Regularizers
+from tensorflow.keras.regularizers import l1_l2
 
 def channel_attention_module(input_feature, ratio=8):
     channel = input_feature.shape[-1]
@@ -89,7 +89,7 @@ def decoder_block(input_feature, skip_connection, num_filters, dropout_rate=0.5)
 
 def BetterNet(input_shape, num_classes, dropout_rate=0.5):
     inputs = Input(shape=input_shape, name="input_image")
-    encoder = EfficientNetB1(input_tensor=inputs, weights="imagenet", include_top=False)
+    encoder = EfficientNetB3(input_tensor=inputs, weights="imagenet", include_top=False)
 
     skip_connection_names = [
         'input_image',

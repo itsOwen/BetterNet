@@ -8,21 +8,21 @@ BetterNet is a state-of-the-art semantic segmentation model specifically designe
 
 ## Table of Contents
 
-- [Features](#features)
-- [Installation](#installation)
-- [Dataset Preparation](#dataset-preparation)
-- [Training](#training)
-- [Testing](#testing)
-- [Results](#results)
-- [Colab Notebook](#colab-notebook)
-- [Model Architecture](#model-architecture)
-- [Evaluation Metrics](#evaluation-metrics)
-- [Visualizing Results](#visualizing-results)
-- [Pretrained Models](#pretrained-models)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
-- [Contact](#contact)
+- [Features](#features-✨)
+- [Installation](#installation-💻)
+- [Dataset Preparation](#dataset-preparation-🗂️)
+- [Training](#training-🏋️)
+- [Testing](#testing-🎯)
+- [Results](#results-📊)
+- [Colab Notebook](#colab-notebook-🌐)
+- [Model Architecture](#model-architecture-🏗️)
+- [Evaluation Metrics](#evaluation-metrics-📏)
+- [Visualizing Results](#visualizing-results-🖼️)
+- [Pretrained Models](#pretrained-models-🏋️‍♀️)
+- [Contributing](#contributing-🤝)
+- [License](#license-📄)
+- [Acknowledgments](#acknowledgments-🙏)
+- [Contact](#contact-📧)
 
 ## Features ✨
 
@@ -97,7 +97,7 @@ Dataset/
 To train the BetterNet model, run the following command:
 
 ```bash
-python train.py --batch_size 8 --num_epochs 100
+python train.py --batch_size 8 --num_epochs 100 Dataset/Kvasir-SEG Dataset/CVC-ClinicDB
 ```
 
 - Adjust the training hyperparameters using the provided command-line arguments according to your requirements.
@@ -120,19 +120,19 @@ python test.py --dataset Kvasir-Sessile
 
 BetterNet achieves state-of-the-art performance on popular polyp segmentation benchmarks. Here are some key metrics:
 
-| Method         | Year | mDice | mIoU | Fωβ   | Sα    | mE    | maxE  | MAE   |
+| Method | Year | mDice | mIoU | Fωβ | Sα | mE | maxE | MAE |
 |----------------|------|-------|------|-------|-------|-------|-------|-------|
-| U-Net          | 2015 | 0.806 | 0.718| 0.784 | 0.842 | 0.890 | 0.894 | 0.052 |
-| U-Net++        | 2018 | 0.797 | 0.704| 0.767 | 0.827 | 0.884 | 0.887 | 0.056 |
-| ACSNet         | 2020 | 0.896 | 0.836| 0.876 | 0.915 | 0.943 | 0.954 | 0.034 |
-| PraNet         | 2020 | 0.897 | 0.845| 0.889 | 0.916 | 0.945 | 0.954 | 0.026 |
-| CaraNet        | 2021 | 0.911 | 0.861| 0.902 | 0.924 | 0.953 | 0.958 | 0.024 |
-| Polyp-PVT      | 2021 | 0.920 | 0.871| 0.915 | 0.927 | 0.954 | 0.962 | 0.024 |
-| SSFormer       | 2022 | 0.914 | 0.884| 0.924 | 0.933 | 0.974 | 0.967 | 0.021 |
-| HSNet          | 2022 | 0.928 | 0.889| 0.927 | 0.939 | 0.967 | 0.977 | 0.017 |
-| PVT-CASCADE    | 2023 | 0.924 | 0.916| 0.945 | 0.951 | 0.917 | 0.964 | 0.022 |
-| CAFE-Net       | 2024 | 0.933 | 0.861| 0.902 | 0.924 | 0.953 | **0.971** | 0.019 |
-| BetterNet      | 2024 | **0.951** | **0.884**| **0.924** | **0.933** | **0.954** | 0.951 | **0.012** |
+| U-Net | 2015 | 0.806 | 0.718 | 0.784 | 0.842 | 0.890 | 0.894 | 0.052 |
+| U-Net++ | 2018 | 0.797 | 0.704 | 0.767 | 0.827 | 0.884 | 0.887 | 0.056 |
+| ACSNet | 2020 | 0.896 | 0.836 | 0.876 | 0.915 | 0.943 | 0.954 | 0.034 |
+| PraNet | 2020 | 0.897 | 0.845 | 0.889 | 0.916 | 0.945 | 0.954 | 0.026 |
+| CaraNet | 2021 | 0.911 | 0.861 | 0.902 | 0.924 | 0.953 | 0.958 | 0.024 |
+| Polyp-PVT | 2021 | 0.920 | 0.871 | 0.915 | 0.927 | 0.954 | 0.962 | 0.024 |
+| SSFormer | 2022 | 0.914 | 0.862 | 0.910 | 0.927 | 0.963 | 0.967 | 0.021 |
+| HSNet | 2022 | 0.928 | 0.884 | 0.924 | 0.933 | **0.974** | **0.977** | 0.017 |
+| PVT-CASCADE | 2023 | 0.924 | 0.875 | 0.920 | 0.929 | 0.960 | 0.964 | 0.022 |
+| CAFE-Net | 2024 | 0.933 | 0.889 | 0.927 | 0.939 | 0.967 | 0.971 | 0.019 |
+| **BetterNet** | 2024 | **0.969** | **0.940** | **0.972** | **0.969** | 0.968 | 0.968 | **0.006** |
 
 In this table, the performance metrics for each method on the Kvasir-SEG dataset are presented, including mean Dice coefficient (mDice), mean Intersection over Union (mIoU), weighted F-measure (Fωβ), S-measure (Sα), mean E-measure (mE), maximum E-measure (maxE), and Mean Absolute Error (MAE).
 

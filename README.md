@@ -238,6 +238,6 @@ If you have any questions, suggestions, or collaborations related to BetterNet, 
 
 - Email: [owensingh72@gmail.com](mailto:owensingh72@gmail.com)
 - GitHub: [https://github.com/itsOwen/BetterNet](https://github.com/itsOwen/BetterNet)
-- Research Paper: [#](#)
+- Research Paper: [#](https://doi.org/10.48550/arXiv.2405.04288)
 
 We are excited to hear from you and discuss how BetterNet can be applied to advance polyp segmentation in medical imaging! 🌟

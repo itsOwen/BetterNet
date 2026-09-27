@@ -236,7 +236,6 @@ We would like to express our gratitude to the following individuals, organizatio
 
 If you have any questions, suggestions, or collaborations related to BetterNet, please feel free to reach out to us:
 
-- Email: [github.com/itsOwen](https://github.com/itsOwen)
 - GitHub: [https://github.com/itsOwen/BetterNet](https://github.com/itsOwen/BetterNet)
 - Research Paper: [https://doi.org/10.48550/arXiv.2405.04288](https://doi.org/10.48550/arXiv.2405.04288)
 
